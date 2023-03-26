@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+:root{
+    --bg-color:#f1f1f1;
+    --second-bg: #ffff;
+    --text-color: #3e3e3e;
+    --maim--color:#3e4D5e;
+}
+body{
+    background:var(--bg-color);
+    margin: .5rem;
+}
+
+.header{
+    display: flex;
+    justify-content:space-between;
+    width: 100%;
+    position: fixed;
+    padding: 2rem 7%;
+    top: 0;
+    left: 0;
+    align-items: center;
+    z-index: 100;
+    background: var(--maim--color);
+
+}
+
+.header:hover{
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    position: absolute;
+    
+}
+
+.navbar .navlinks{
+    margin-left: 550px;
+    
+}
+
+.navbar h3{
+    font-size: 2rem;
+    color: lightblue;
+}
+
+span{
+    color: orange;
+}
+
+.btn{
+    border: .2rem solid rgba(0, 0, 0, .1);
+    padding: 5px;
+    border-radius: .5rem;
+    background: var(--maim--color);
+    color: lightblue;
+    text-decoration: none;
+    
+}
+
+.btn:hover{
+    background: lightblue;
+    color: var(--maim--color);
+}
+
+.navbar a,
+.footer a{
+    font-size: 1.6rem;
+    padding: .5rem;
+    text-decoration: none;
+    color: black;
+
+}
+
+.navbar a:hover,
+.footer a:hover{
+    color: lightblue;
+}
+
+.main{
+    margin-top: 5%;
+    padding: 2rem;
+   background: url(/assets/images/4.jpeg);
+   height: 100vh;
+   position: relative;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.main h2{
+    font-size: 5rem;
+    text-align: center;
+    margin-top:15%;
+    padding-top: absolute;
+
+}
+.about{
+    width: 100%;
+    padding: .5rem;
+    margin: 10px;
+}
+
+.about h3,
+.services h3,
+.contact h3{
+    text-align: center;
+    font-size: 2rem;
+    color: var(--maim--color);
+}
+
+.about-body{
+    display: flex;
+    padding: 2rem;
+    width: 100%;
+    gap: 2rem;
+}
+
+.about .about-img{
+    width: 45%;
+    padding: .5rem;
+}
+
+.about-img img{
+    width: 500px;
+}
+
+.about-content{
+    padding: 2rem;
+}
+
+.about-content h4{
+    text-align: center;
+    font-size: 30px;
+}
+
+.about-content p{
+    font-size:20px ;
+    padding: 5px;
+    
+}
+
+.team{
+    margin-left: .5rem;
+    display: flex;
+
+}
+
+.team .member{
+    width: 31%;
+    padding: .5rem;
+    margin: 10px;
+    border: .2rem solid rgba(0, 0, 0, .1);
+    border-radius: 5px;
+    box-shadow: 2px salmon;
+}
+
+.member img{
+    width: 100%;
+    height: 25rem;
+    border-radius: 50%;
+}
+
+.member h5, 
+.member h4,
+.member p{
+    text-align: center;
+    padding: 5px;
+}
+
+.services{
+    padding: 1.5rem;
+    margin: 5px;
+    
+}
+
+.services-body{
+    display: flex;
+    font-size: 1.5rem;
+    padding: 12px;
+    margin: 10px;
+    gap: 1.5rem;
+    background: var(--second-bg);
+} 
+
+.services-body .left{
+    padding: 5px;
+    background: var(--maim--color);
+
+}
+
+.services .left p{
+    color: var(--second-bg);
+}
+
+.right .col{
+    padding: 5px;
+    border: .1rem ;
+    text-align: center;
+
+}
+
+.contact form{
+    max-width: 70rem;
+    text-align: center;
+    margin: 1rem auto;
+}
+
+.contact form .input-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contact form .input-box input, 
+.contact form  textarea{
+    width: 100%;
+    padding: .5rem;
+    font-size: 1.6rem;
+    margin: .7rem 0;
+    border-radius: .5rem;
+    border: 1px solid rgba(0, 0, 0, .1);
+}
+
+.contact form .input-box input,
+.contact form textarea{
+    width: 49%;
+}
+
+footer{
+    background: var(--maim--color);
+    text-align: center;
+
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%
+}
+
+.footer .col{
+    width: 30%;
+    padding: .5rem;
+}
+
+.footer h4{
+    font-size: 2rem;
+    text-align: center;
+    color: lightblue;
+}
+
+.footer a, .footer p{
+    display: block;
+    text-decoration: none;
+    font-size: 1.6rem;
+}
+
+footer p{
+    font-size: 20px;
+    padding: 15px;
+}
+
